@@ -1,0 +1,1998 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     91318,       1990]
+NotebookOptionsPosition[     87015,       1932]
+NotebookOutlinePosition[     87358,       1947]
+CellTagsIndexPosition[     87315,       1944]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", "\[IndentingNewLine]", 
+   RowBox[{"tab1", "\[IndentingNewLine]", "csvUTF"}], "\[IndentingNewLine]", 
+   "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "Just", " ", "put", " ", "here", " ", "the", " ", "names", " ", "of", " ", 
+    "all", " ", "memrise", " ", "users", " ", "to", " ", "download", " ", 
+    "mems", " ", "from", " ", "and", " ", "run", " ", "the", " ", "script"}], 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"users", "=", 
+     RowBox[{"{", "\"\<amoussa\>\"", "}"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", "\"\<scoreperfect\>\"", "}"}], ";", 
+    RowBox[{"{", "\"\<MaxLogan6450\>\"", "}"}], ";", 
+    RowBox[{"{", "\"\<JathonThompson\>\"", "}"}], ";", 
+    RowBox[{"{", "\"\<Ishiburu\>\"", "}"}], ";", 
+    RowBox[{"{", "\"\<Tonbo\>\"", "}"}], ";"}], 
+   StyleBox["\[IndentingNewLine]",
+    FontWeight->"Plain"], 
+   RowBox[{
+    RowBox[{"{", "\"\<neko-chan\>\"", "}"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", "\"\<don.hiro\>\"", "}"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", "\"\<RaulDuke\>\"", "}"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", "\"\<Pope_Pius_IX\>\"", "}"}], ";", 
+    RowBox[{"{", "\"\<Drjustice\>\"", "}"}], ";", 
+    RowBox[{"{", "\"\<Frop\>\"", "}"}], ";", 
+    RowBox[{"{", "\"\<Olaf.Rabbachin\>\"", "}"}], ";", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<TinyCaterpillar\>\"", ",", 
+      "\"\<\:30d3\:30e2\:3061\:3083\:3093\>\""}], "}"}], ";", 
+    RowBox[{"{", "\"\<johnastsang\>\"", "}"}], ";", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Eltaurus\>\"", ",", "\"\<cos\>\""}], "}"}], ";", 
+    RowBox[{"{", "\"\<DW7\>\"", "}"}], ";", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Eltaurus\>\"", ",", "\"\<blippityblop\>\""}], "}"}], ";", 
+    RowBox[{"{", 
+     RowBox[{"\"\<anwarrida\>\"", ",", "\"\<jackfrutz\>\""}], "}"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<jackfrutz\>\"", ",", "\"\<Uricon\>\"", ",", "\"\<sushinom\>\"", 
+      ",", "\"\<realasik\>\"", ",", "\"\<joeys123\>\"", ",", 
+      "\"\<apriltriumphant\>\""}], "}"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Bankai1\>\"", ",", "\"\<barkertrax\>\"", ",", 
+      "\"\<DesmonRichards\>\"", ",", "\"\<Drjustice\>\"", ",", 
+      "\"\<Exantos\>\"", ",", "\"\<Faballion\>\"", ",", "\"\<JoeKomaGawa\>\"",
+       ",", "\"\<JoshuaSchroeder5c\>\"", ",", "\"\<Kermiltel\>\"", ",", 
+      "\"\<kllowny\>\"", ",", "\"\<lovetravelbass\>\"", ",", 
+      "\"\<mimeticism\>\"", ",", "\"\<Nihongogogo\>\"", ",", 
+      "\"\<NinaLouise\>\"", ",", "\"\<rvonsmith\>\"", ",", "\"\<SammyWo\>\"", 
+      ",", "\"\<shacklesburst\>\"", ",", "\"\<skaniti\>\"", ",", 
+      "\"\<Talsman\>\"", ",", "\"\<terentius\>\"", ",", "\"\<WMR\>\""}], 
+     "}"}], " ", ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Eltaurus\>\"", ",", "\"\<MariChally\>\"", ",", "\"\<alhoffmn\>\"", 
+      ",", "\"\<Yurixy\>\"", ",", "\"\<deltay\>\"", ",", "\"\<jakub.hyla\>\"",
+       ",", "\"\<tvit0\>\"", ",", "\"\<Dark_Tenki\>\"", ",", 
+      "\"\<rafalbrew\>\"", ",", "\"\<gurizzu\>\"", ",", "\"\<csgavino\>\"", 
+      ",", "\"\<drfaiz.redzada\>\"", ",", "\"\<QMN\>\"", ",", 
+      "\"\<bulletfodder\>\"", ",", "\"\<Kershe\>\"", ",", "\"\<Prognarok\>\"",
+       ",", "\"\<taromochi\>\"", ",", "\"\<pit13\>\"", ",", "\"\<Fmios\>\"", 
+      ",", "\"\<DieKat\>\"", ",", "\"\<BestDrummer\>\"", ",", 
+      "\"\<necromanzer52\>\"", ",", "\"\<izandal\>\"", ",", "\"\<CaptMax\>\"",
+       ",", "\"\<rizalmab\>\"", ",", "\"\<drjohnson\>\"", ",", 
+      "\"\<axelahlin\>\"", ",", "\"\<DanielB93\>\"", ",", "\"\<August51\>\"", 
+      ",", "\"\<comfort.misha\>\"", ",", "\"\<bgaskin\>\"", ",", 
+      "\"\<hyh124\>\"", ",", "\"\<Appolz\>\"", ",", "\"\<mussels.fries\>\"", 
+      ",", "\"\<NinjaKnight\>\"", ",", "\"\<Sakura-Nrikard\>\"", ",", 
+      "\"\<WedgedWolf\>\"", ",", "\"\<AsafGrisero6\>\"", ",", 
+      "\"\<MatijaKrog\>\"", ",", "\"\<e2oo\>\"", ",", "\"\<Ross_Neilson\>\"", 
+      ",", "\"\<Octaslave\>\"", ",", "\"\<KanjiSamurai\>\"", ",", 
+      "\"\<Theotherhiveking\>\"", ",", "\"\<minhluan1590\>\"", ",", 
+      "\"\<zalcos\>\"", ",", "\"\<plala\>\"", ",", "\"\<LuMichelini\>\"", 
+      ",", "\"\<ellen.bigger81\>\"", ",", "\"\<Jinjinia\>\"", ",", 
+      "\"\<ASideofMiso\>\""}], "}"}], ";"}], " ", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"users", "=", 
+     RowBox[{"DeleteDuplicates", "[", "users", "]"}]}], ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.847472043730547*^9, 3.8474720561818113`*^9}, {
+   3.847472091572909*^9, 3.847472094891118*^9}, {3.84747242958552*^9, 
+   3.8474724758153405`*^9}, {3.847474073648202*^9, 3.847474089912496*^9}, {
+   3.8474742374419975`*^9, 3.8474742417734623`*^9}, {3.8474745622201757`*^9, 
+   3.8474745689379554`*^9}, {3.847475568250581*^9, 3.847475575587668*^9}, {
+   3.8474773991419325`*^9, 3.847477418877828*^9}, {3.8474815136431108`*^9, 
+   3.8474815199252515`*^9}, {3.84748162939859*^9, 3.8474816312980776`*^9}, {
+   3.847482807271839*^9, 3.8474828083736935`*^9}, 3.8474837895970087`*^9, {
+   3.8474961006879654`*^9, 3.8474961369996843`*^9}, {3.8474961922165976`*^9, 
+   3.847496200645387*^9}, {3.8475021910863075`*^9, 3.8475022046366353`*^9}, {
+   3.847502367751204*^9, 3.8475023689222927`*^9}, {3.847523342879718*^9, 
+   3.8475233515493975`*^9}, {3.847724998925458*^9, 3.8477250029151573`*^9}, {
+   3.84773421332545*^9, 3.847734225481367*^9}, {3.8477396891308985`*^9, 
+   3.8477396912759266`*^9}, {3.847815629306551*^9, 3.84781563121635*^9}, {
+   3.8478158998850527`*^9, 3.847815986871064*^9}, {3.847816018769393*^9, 
+   3.8478160697502413`*^9}, 3.8478261344816384`*^9, {3.848056478345809*^9, 
+   3.848056485742303*^9}, 3.8480611856091805`*^9, {3.848061256303562*^9, 
+   3.848061284463169*^9}, {3.8480756777840843`*^9, 3.848075680554618*^9}, {
+   3.8480757835865793`*^9, 3.84807579253094*^9}, {3.8480758248448257`*^9, 
+   3.8480758326987066`*^9}, {3.8480758897422233`*^9, 
+   3.8480758983169413`*^9}, {3.848076098634658*^9, 3.8480761057942843`*^9}, {
+   3.8480783498525753`*^9, 3.8480783508398314`*^9}, {3.84807883231925*^9, 
+   3.848078833621996*^9}, {3.848080464139455*^9, 3.8480804651834908`*^9}, {
+   3.848081913909422*^9, 3.848081914923705*^9}, {3.848084208451132*^9, 
+   3.848084209599022*^9}, {3.8480862526808567`*^9, 3.8480862576202974`*^9}, {
+   3.8480875824889717`*^9, 3.848087588418439*^9}, {3.848087645089737*^9, 
+   3.848087647430054*^9}, 3.8480916695367208`*^9, {3.8480946506628*^9, 
+   3.848094650964384*^9}, {3.848098075644412*^9, 3.848098076212188*^9}, {
+   3.848100161584367*^9, 3.848100174868676*^9}, {3.8481383221619515`*^9, 
+   3.848138325408699*^9}, {3.848274708646125*^9, 3.848274712742918*^9}, {
+   3.848447664568578*^9, 3.848447678770138*^9}, {3.84844778306359*^9, 
+   3.8484477847849436`*^9}, {3.848833760184785*^9, 3.8488337641440105`*^9}, {
+   3.848911826377921*^9, 3.848911834118084*^9}, {3.8495849052210636`*^9, 
+   3.8495849149064283`*^9}, {3.8496241454859476`*^9, 
+   3.8496241516929703`*^9}, {3.8496761287507596`*^9, 
+   3.8496761360349092`*^9}, {3.849842821994116*^9, 3.849842834022419*^9}, {
+   3.849971501337775*^9, 3.8499715032189665`*^9}, 3.850618388180992*^9, {
+   3.8515606349487715`*^9, 3.8515606384277887`*^9}, {3.8517321818459806`*^9, 
+   3.851732185239954*^9}, {3.852893522224939*^9, 3.852893525271531*^9}, {
+   3.852893633220888*^9, 3.8528936355465355`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"7a92bbae-a347-454f-a82c-548bb7d63afa"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", "Definitions", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"StringCurleTake", "[", "string_", "]"}], ":=", 
+     RowBox[{"StringCurleTake", "[", 
+      RowBox[{"string", ",", "1"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"StringCurleTake", "[", 
+     RowBox[{"string_", ",", "start_"}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", "cut", "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"cut", "=", 
+        RowBox[{"StringTake", "[", 
+         RowBox[{"string", ",", 
+          RowBox[{"{", 
+           RowBox[{"start", ",", 
+            RowBox[{"-", "1"}]}], "}"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"StringTake", "[", 
+        RowBox[{"cut", ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"StringPosition", "[", 
+             RowBox[{"cut", ",", "\"\<{\>\""}], "]"}], "\[LeftDoubleBracket]", 
+            RowBox[{"1", ",", "1"}], "\[RightDoubleBracket]"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"StringPosition", "[", 
+             RowBox[{"cut", ",", "\"\<}\>\""}], "]"}], "\[LeftDoubleBracket]", 
+            RowBox[{"1", ",", "1"}], "\[RightDoubleBracket]"}]}], "}"}]}], 
+        "]"}]}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"StringSqrTake", "[", 
+     RowBox[{"string_", ",", "start_"}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", "cut", "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"cut", "=", 
+        RowBox[{"StringTake", "[", 
+         RowBox[{"string", ",", 
+          RowBox[{"{", 
+           RowBox[{"start", ",", 
+            RowBox[{"-", "1"}]}], "}"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"StringTake", "[", 
+        RowBox[{"cut", ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"StringPosition", "[", 
+             RowBox[{"cut", ",", "\"\<[\>\""}], "]"}], "\[LeftDoubleBracket]", 
+            RowBox[{"1", ",", "1"}], "\[RightDoubleBracket]"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"StringPosition", "[", 
+             RowBox[{"cut", ",", "\"\<]\>\""}], "]"}], "\[LeftDoubleBracket]", 
+            RowBox[{"1", ",", "1"}], "\[RightDoubleBracket]"}]}], "}"}]}], 
+        "]"}]}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"RemoveField", "[", 
+      RowBox[{"string_", ",", "field_"}], "]"}], ":=", 
+     RowBox[{"StringReplace", "[", 
+      RowBox[{"string", ",", 
+       RowBox[{
+        RowBox[{"StringCurleTake", "[", 
+         RowBox[{"string", ",", 
+          RowBox[{
+           RowBox[{"StringPosition", "[", 
+            RowBox[{"string", ",", "field"}], "]"}], "\[LeftDoubleBracket]", 
+           RowBox[{"1", ",", "1"}], "\[RightDoubleBracket]"}]}], "]"}], 
+        "\[Rule]", "\"\<\>\""}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"RemoveFieldSqr", "[", 
+      RowBox[{"string_", ",", "field_"}], "]"}], ":=", 
+     RowBox[{"StringReplace", "[", 
+      RowBox[{"string", ",", 
+       RowBox[{
+        RowBox[{"StringSqrTake", "[", 
+         RowBox[{"string", ",", 
+          RowBox[{
+           RowBox[{"StringPosition", "[", 
+            RowBox[{"string", ",", "field"}], "]"}], "\[LeftDoubleBracket]", 
+           RowBox[{"1", ",", "1"}], "\[RightDoubleBracket]"}]}], "]"}], 
+        "\[Rule]", "\"\<\>\""}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"RemoveConfused", "[", "string_", "]"}], ":=", 
+     RowBox[{
+      RowBox[{"StringTake", "[", 
+       RowBox[{"string", ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"StringPosition", "[", 
+             RowBox[{"string", ",", "\"\<\\\"confused_answers\\\": \>\""}], 
+             "]"}], "\[LeftDoubleBracket]", 
+            RowBox[{"1", ",", "1"}], "\[RightDoubleBracket]"}], "-", "1"}]}], 
+         "}"}]}], "]"}], "<>", 
+      RowBox[{"StringTake", "[", 
+       RowBox[{"string", ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"StringPosition", "[", 
+            RowBox[{"string", ",", "\"\<\\\"difficulty\\\": \>\""}], "]"}], 
+           "\[LeftDoubleBracket]", 
+           RowBox[{"1", ",", "1"}], "\[RightDoubleBracket]"}], ",", 
+          RowBox[{"-", "1"}]}], "}"}]}], "]"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"CurleOrder", "[", "string_", "]"}], ":=", 
+     RowBox[{
+      RowBox[{"Select", "[", 
+       RowBox[{
+        RowBox[{"Characters", "[", "string", "]"}], ",", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"#", "\[Equal]", "\"\<{\>\""}], "||", 
+          RowBox[{"#", "\[Equal]", "\"\<}\>\""}]}], "&"}]}], "]"}], "//", 
+      "StringJoin"}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"CurleToPretab", "[", "string_", "]"}], ":=", 
+     RowBox[{"Module", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "n1", ",", "n2", ",", "addtext1", ",", "addtext2", ",", "res", ",", 
+         "string2"}], "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"string2", "=", "string"}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"n1", "=", 
+         RowBox[{"StringPosition", "[", 
+          RowBox[{"string2", ",", "\"\<\\\"text\\\":\>\""}], "]"}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"n2", "=", 
+         RowBox[{"StringPosition", "[", 
+          RowBox[{"string2", ",", "\"\<\\\"cre\\\":\>\""}], "]"}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"Length", "[", "n1", "]"}], ">", "0"}], "&&", 
+           RowBox[{
+            RowBox[{"Length", "[", "n2", "]"}], ">", "0"}]}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"n1", "=", 
+            RowBox[{"Last", "@", 
+             RowBox[{"First", "[", "n1", "]"}]}]}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"n2", "=", 
+            RowBox[{"First", "@", 
+             RowBox[{"First", "[", "n2", "]"}]}]}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"addtext1", "=", 
+            RowBox[{"StringTake", "[", 
+             RowBox[{"string2", ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"n1", "+", "2"}], ",", 
+                RowBox[{"n2", "-", "3"}]}], "}"}]}], "]"}]}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"string2", "=", 
+            RowBox[{"StringDrop", "[", 
+             RowBox[{"string2", ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"n1", "-", "5"}], ",", "n2"}], "}"}]}], "]"}]}], 
+           ";"}], "\[IndentingNewLine]", ",", 
+          RowBox[{
+           RowBox[{"addtext1", "=", 
+            RowBox[{"-", "1"}]}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"n1", "=", 
+         RowBox[{"StringPosition", "[", 
+          RowBox[{"string2", ",", "\"\<\\\"value\\\":\>\""}], "]"}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"n2", "=", 
+         RowBox[{"StringPosition", "[", 
+          RowBox[{"string2", ",", "\"\<\\\"label\\\":\>\""}], "]"}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"Length", "[", "n1", "]"}], ">", "0"}], "&&", 
+           RowBox[{
+            RowBox[{"Length", "[", "n2", "]"}], ">", "0"}]}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"n1", "=", 
+            RowBox[{"Last", "@", 
+             RowBox[{"First", "[", "n1", "]"}]}]}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"n2", "=", 
+            RowBox[{"First", "@", 
+             RowBox[{"First", "[", "n2", "]"}]}]}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"addtext2", "=", 
+            RowBox[{"StringTake", "[", 
+             RowBox[{"string2", ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"n1", "+", "2"}], ",", 
+                RowBox[{"n2", "-", "3"}]}], "}"}]}], "]"}]}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"string2", "=", 
+            RowBox[{"StringDrop", "[", 
+             RowBox[{"string2", ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"n1", "-", "6"}], ",", "n2"}], "}"}]}], "]"}]}], 
+           ";"}], "\[IndentingNewLine]", ",", 
+          RowBox[{
+           RowBox[{"addtext2", "=", 
+            RowBox[{"-", "1"}]}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"res", "=", 
+         RowBox[{"Partition", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{"StringTake", "[", 
+              RowBox[{"#", ",", 
+               RowBox[{"{", 
+                RowBox[{"1", ",", 
+                 RowBox[{"-", "2"}]}], "}"}]}], "]"}], "&"}], "/@", 
+            RowBox[{"First", "[", 
+             RowBox[{"ImportString", "[", 
+              RowBox[{"string2", ",", "\"\<Table\>\""}], "]"}], "]"}]}], ",", 
+           "2"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"!", 
+           RowBox[{"TrueQ", "[", 
+            RowBox[{"addtext1", "\[Equal]", 
+             RowBox[{"-", "1"}]}], "]"}]}], ",", 
+          RowBox[{"AppendTo", "[", 
+           RowBox[{"res", ",", 
+            RowBox[{"{", 
+             RowBox[{"\"\<\\\"text\\\"\>\"", ",", "addtext1"}], "}"}]}], 
+           "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"!", 
+           RowBox[{"TrueQ", "[", 
+            RowBox[{"addtext2", "\[Equal]", 
+             RowBox[{"-", "1"}]}], "]"}]}], ",", 
+          RowBox[{"AppendTo", "[", 
+           RowBox[{"res", ",", 
+            RowBox[{"{", 
+             RowBox[{"\"\<\\\"value\\\"\>\"", ",", "addtext2"}], "}"}]}], 
+           "]"}]}], "]"}], ";", "\[IndentingNewLine]", "res"}]}], 
+      "\[IndentingNewLine]", "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"TakeFields", "[", 
+      RowBox[{"pretab_", ",", "fields_"}], "]"}], ":=", 
+     RowBox[{
+      RowBox[{"Function", "[", 
+       RowBox[{"field", ",", 
+        RowBox[{
+         RowBox[{"Select", "[", 
+          RowBox[{"pretab", ",", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+             "#", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
+             "\[Equal]", "field"}], "&"}]}], "]"}], "\[LeftDoubleBracket]", 
+         RowBox[{"1", ",", "2"}], "\[RightDoubleBracket]"}]}], "]"}], "/@", 
+      "fields"}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"ParceCurleTable", "[", 
+      RowBox[{"string_", ",", "fields_"}], "]"}], ":=", 
+     RowBox[{"Module", "[", 
+      RowBox[{
+       RowBox[{"{", "pre", "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"pre", "=", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"StringTake", "[", 
+            RowBox[{"string", ",", "#"}], "]"}], "&"}], "/@", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               RowBox[{
+                RowBox[{"StringPosition", "[", 
+                 RowBox[{"string", ",", "\"\<{\\\"id\\\":\>\""}], "]"}], 
+                "\[LeftDoubleBracket]", 
+                RowBox[{";;", ",", "1"}], "\[RightDoubleBracket]"}], "+", 
+               "1"}], ",", 
+              RowBox[{"Append", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"StringPosition", "[", 
+                   RowBox[{"string", ",", "\"\<}, {\\\"id\\\"\>\""}], "]"}], 
+                  "\[LeftDoubleBracket]", 
+                  RowBox[{";;", ",", "1"}], "\[RightDoubleBracket]"}], "-", 
+                 "1"}], ",", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"StringPosition", "[", 
+                   RowBox[{"string", ",", "\"\<}\>\""}], "]"}], 
+                  "\[LeftDoubleBracket]", 
+                  RowBox[{
+                   RowBox[{"-", "1"}], ",", "1"}], "\[RightDoubleBracket]"}], 
+                 "-", "1"}]}], "]"}]}], "}"}], "\[Transpose]"}], ")"}]}]}], 
+        ";", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"TakeFields", "[", 
+           RowBox[{
+            RowBox[{"CurleToPretab", "@", "#"}], ",", "fields"}], "]"}], 
+          "&"}], "/@", "pre"}]}]}], "\[IndentingNewLine]", "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"JavaSpecialCharacters", "[", "string_", "]"}], ":=", 
+     RowBox[{"StringReplace", "[", 
+      RowBox[{
+       RowBox[{"StringReplace", "[", 
+        RowBox[{"string", ",", "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"\"\<\\\\\\\"\>\"", "\[Rule]", "\"\<\\\"\>\""}], "}"}]}], 
+        "]"}], ",", " ", 
+       RowBox[{
+        RowBox[{
+        "\"\<\\\\u\>\"", "~~", "x1_", "~~", "x2_", "~~", "x3_", "~~", "x4_"}],
+         "\[RuleDelayed]", 
+        RowBox[{"FromCharacterCode", "[", 
+         RowBox[{"FromDigits", "[", 
+          RowBox[{
+           RowBox[{"x1", "<>", "x2", "<>", "x3", "<>", "x4"}], ",", "16"}], 
+          "]"}], "]"}]}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"LabelValue", "[", "string_", "]"}], ":=", 
+     RowBox[{"Join", "[", 
+      RowBox[{
+       RowBox[{"StringCases", "[", 
+        RowBox[{"string", ",", 
+         RowBox[{
+          RowBox[{
+          "\"\<\\\"label\\\": \>\"", "~~", "s__", "~~", 
+           "\"\<, \\\"always_show\\\"\>\""}], "\[RuleDelayed]", "s"}]}], 
+        "]"}], ",", 
+       RowBox[{"StringCases", "[", 
+        RowBox[{"string", ",", 
+         RowBox[{
+          RowBox[{
+          "\"\<\\\"value\\\": \>\"", "~~", "s__", "~~", 
+           "\"\<, \\\"label\\\"\>\""}], "\[RuleDelayed]", "s"}]}], "]"}]}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"ExtractLinks", "[", "string_", "]"}], ":=", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"StringCount", "[", 
+          RowBox[{"string", ",", "\"\<\\\"normal\\\":\>\""}], " ", "]"}], "==",
+          "0"}], " ", "&&", 
+        RowBox[{
+         RowBox[{"StringCount", "[", 
+          RowBox[{"string", ",", "\"\<\\\"slow\\\":\>\""}], " ", "]"}], "==", 
+         "0"}]}], " ", ",", "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{"image", " ", "or", " ", "image", " ", "list"}], "*)"}], 
+       "\[IndentingNewLine]", 
+       RowBox[{"StringSplit", "[", 
+        RowBox[{
+         RowBox[{"StringTake", "[", 
+          RowBox[{"string", ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", 
+             RowBox[{"-", "2"}]}], "}"}]}], "]"}], ",", 
+         "\"\<\\\", \\\"\>\""}], "]"}], "\[IndentingNewLine]", ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"(*", "audio", "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"Join", "[", 
+        RowBox[{
+         RowBox[{"StringCases", "[", 
+          RowBox[{"string", ",", 
+           RowBox[{
+            RowBox[{
+            "\"\<\\\"normal\\\": \\\"\>\"", "~~", "s__", "~~", 
+             "\"\<\\\", \\\"slow\\\"\>\""}], "\[RuleDelayed]", " ", "s"}]}], 
+          "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"StringCases", "[", 
+          RowBox[{"string", ",", 
+           RowBox[{
+            RowBox[{
+            "\"\<\\\"slow\\\": \\\"\>\"", "~~", "s__", "~~", "\"\<\\\"\>\""}],
+             "\[RuleDelayed]", " ", "s"}]}], "]"}]}], "]"}]}], 
+      "\[IndentingNewLine]", "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"LinkFilename", "[", "string_", "]"}], ":=", 
+     RowBox[{"Last", "@", 
+      RowBox[{"URLParse", "[", 
+       RowBox[{"string", ",", "\"\<Path\>\""}], "]"}]}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Download", " ", "function", " ", "for", " ", "mems", " ", "on", " ", "a",
+      " ", "single", " ", "page"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"PageUserDownload", "[", 
+      RowBox[{"user_", ",", "pn_"}], "]"}], ":=", 
+     RowBox[{"Module", "[", 
+      RowBox[{
+       RowBox[{"{", "}"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"page0", "=", 
+         RowBox[{
+         "\"\<https://app.memrise.com/user/\>\"", "<>", "user", "<>", 
+          "\"\</mems/created/\>\""}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"page", "=", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"pn", ">", "1"}], ",", 
+           RowBox[{"page0", "<>", "\"\<?page=\>\"", "<>", 
+            RowBox[{"ToString", "[", "pn", "]"}]}], ",", "page0"}], "]"}]}], 
+        ";", "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{
+          RowBox[{"Print", "[", "page", "]"}], ";"}], "*)"}], 
+        "\[IndentingNewLine]", 
+        RowBox[{"Print", "[", 
+         RowBox[{"\"\<Downloading page \>\"", "<>", 
+          RowBox[{"ToString", "[", "pn", "]"}]}], "]"}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"html0", "=", 
+         RowBox[{"Import", "[", 
+          RowBox[{"page", ",", "\"\<text\>\""}], "]"}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"memdata", "=", 
+         RowBox[{
+          RowBox[{"StringSplit", "[", 
+           RowBox[{"html0", ",", 
+            RowBox[{"{", 
+             RowBox[{
+             "\"\<new MEMRISE.MemStream(\\n\>\"", ",", 
+              "\"\<{\\n                    $elem: $('.memstream')\>\""}], 
+             "}"}]}], "]"}], "\[LeftDoubleBracket]", "2", 
+          "\[RightDoubleBracket]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"pn", "\[Equal]", "1"}], ",", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"avalink", "=", 
+            RowBox[{
+             RowBox[{"StringCases", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"StringSplit", "[", 
+                 RowBox[{"memdata", ",", "\"\<\\\"photo\\\": \\\"\>\""}], 
+                 "]"}], "\[LeftDoubleBracket]", "2", 
+                "\[RightDoubleBracket]"}], ",", 
+               RowBox[{
+                RowBox[{"ava__", "~~", "\"\<\\\", \\\"photo_small\\\"\>\""}], 
+                "\[RuleDelayed]", " ", "ava"}]}], "]"}], 
+             "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}]}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"URLDownload", "[", 
+            RowBox[{"avalink", ",", 
+             RowBox[{"user", "<>", "\"\<.\>\"", "<>", 
+              RowBox[{"Last", "[", 
+               RowBox[{"StringSplit", "[", 
+                RowBox[{
+                 RowBox[{"LinkFilename", "[", "avalink", "]"}], ",", 
+                 "\"\<.\>\""}], "]"}], "]"}]}]}], "]"}], ";"}]}], 
+         "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"nm", "=", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"StringPosition", "[", 
+              RowBox[{"memdata", ",", "\"\<{\\\"id\\\":\>\""}], "]"}], 
+             "\[LeftDoubleBracket]", 
+             RowBox[{";;", ",", "1"}], "\[RightDoubleBracket]"}], "//", 
+            "Length"}], ")"}], "/", "2"}]}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"memcln", "=", 
+         RowBox[{"RemoveField", "[", 
+          RowBox[{"memdata", ",", "\"\<\\\"author\\\": \>\""}], "]"}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{"cut", " ", "text", " ", "into", " ", "two", " ", "parts"}], 
+         "*)"}], "\[IndentingNewLine]", 
+        RowBox[{"cut", "=", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"StringPosition", "[", 
+            RowBox[{"memcln", ",", "\"\<can_edit\>\""}], "]"}], 
+           "\[LeftDoubleBracket]", 
+           RowBox[{"nm", ",", "2"}], "\[RightDoubleBracket]"}], "+", 
+          RowBox[{
+           RowBox[{"StringPosition", "[", 
+            RowBox[{
+             RowBox[{"StringTake", "[", 
+              RowBox[{"memcln", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"StringPosition", "[", 
+                   RowBox[{"memcln", ",", "\"\<can_edit\>\""}], "]"}], 
+                  "\[LeftDoubleBracket]", 
+                  RowBox[{"nm", ",", "2"}], "\[RightDoubleBracket]"}], ",", 
+                 RowBox[{"-", "1"}]}], "}"}]}], "]"}], ",", "\"\<{\>\""}], 
+            "]"}], "\[LeftDoubleBracket]", 
+           RowBox[{"1", ",", "1"}], "\[RightDoubleBracket]"}], "-", "1"}]}], 
+        ";", "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{
+          RowBox[{"cut", "=", 
+           RowBox[{
+            RowBox[{"StringPosition", "[", 
+             RowBox[{"memcln", ",", "\"\<{\>\""}], "]"}], 
+            "\[LeftDoubleBracket]", 
+            RowBox[{
+             RowBox[{"nm", "+", "1"}], ",", "1"}], 
+            "\[RightDoubleBracket]"}]}], ";"}], "*)"}], "\[IndentingNewLine]", 
+        RowBox[{"tab1", "=", 
+         RowBox[{"StringTake", "[", 
+          RowBox[{"memcln", ",", 
+           RowBox[{"cut", "-", "1"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"tab2", "=", 
+         RowBox[{"StringTake", "[", 
+          RowBox[{"memcln", ",", 
+           RowBox[{"{", 
+            RowBox[{"cut", ",", 
+             RowBox[{"-", "1"}]}], "}"}]}], "]"}]}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"Tab1", "=", 
+         RowBox[{"ParceCurleTable", "[", 
+          RowBox[{"tab1", ",", 
+           RowBox[{"{", 
+            RowBox[{
+            "\"\<\\\"thing_id\\\"\>\"", ",", "\"\<\\\"text\\\"\>\"", ",", 
+             "\"\<\\\"image_original\\\"\>\"", ",", 
+             "\"\<\\\"image_output_url\\\"\>\""}], "}"}]}], "]"}]}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"StringCount", "[", 
+            RowBox[{"tab2", ",", "\"\<\\\"learnable_id\\\"\>\""}], "]"}], ">",
+            "0"}], ",", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"raw2", "=", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"StringTake", "[", 
+               RowBox[{"tab2", ",", "#"}], "]"}], "&"}], "/@", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"StringPosition", "[", 
+                    RowBox[{"tab2", ",", "\"\<\\\"learnable_id\\\"\>\""}], 
+                    "]"}], "\[LeftDoubleBracket]", 
+                   RowBox[{";;", ",", "1"}], "\[RightDoubleBracket]"}], "-", 
+                  "1"}], ",", 
+                 RowBox[{"Append", "[", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"StringPosition", "[", 
+                    RowBox[{"tab2", ",", "\"\<\\\"learnable_id\\\"\>\""}], 
+                    "]"}], "\[LeftDoubleBracket]", 
+                    RowBox[{
+                    RowBox[{"2", ";;"}], ",", "1"}], 
+                    "\[RightDoubleBracket]"}], "-", "2"}], ",", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"tab2", "//", "StringLength"}], ")"}], "-", 
+                    "19"}]}], "]"}]}], "}"}], "\[Transpose]"}], ")"}]}]}], 
+           ";"}], "\[IndentingNewLine]", ",", 
+          RowBox[{"raw2", "=", 
+           RowBox[{"{", "}"}]}]}], "]"}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"Tab2", "=", 
+         RowBox[{
+          RowBox[{"Function", "[", 
+           RowBox[{"item1", ",", "\[IndentingNewLine]", 
+            RowBox[{"Flatten", "@", 
+             RowBox[{"Join", "[", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"StringCases", "[", 
+                RowBox[{"item1", ",", 
+                 RowBox[{
+                  RowBox[{"\"\<\\\"thing_id\\\": \>\"", "~~", 
+                   RowBox[{"x", ":", "NumberString"}]}], "\[RuleDelayed]", 
+                  "x"}]}], "]"}], ",", "\[IndentingNewLine]", 
+               RowBox[{"StringCases", "[", 
+                RowBox[{"item1", ",", 
+                 RowBox[{
+                  RowBox[{"\"\<\\\"learnable_id\\\": \\\"\>\"", "~~", 
+                   RowBox[{"x", ":", "NumberString"}]}], "\[RuleDelayed]", 
+                  RowBox[{
+                  "\"\<\\\"\>\"", "<>", "x", "<>", "\"\<\\\"\>\""}]}]}], 
+                "]"}], ",", "\[IndentingNewLine]", 
+               RowBox[{"LabelValue", "[", 
+                RowBox[{"First", "[", 
+                 RowBox[{"StringCases", "[", 
+                  RowBox[{"item1", ",", 
+                   RowBox[{
+                    RowBox[{
+                    "\"\<\\\"definition\\\": {\>\"", "~~", "s__", "~~", 
+                    "\"\<}, \\\"confused_answers\\\"\>\""}], "\[RuleDelayed]",
+                     "s"}]}], "]"}], "]"}], "]"}], ",", "\[IndentingNewLine]", 
+               RowBox[{"LabelValue", "[", 
+                RowBox[{"First", "[", 
+                 RowBox[{"StringCases", "[", 
+                  RowBox[{"item1", ",", 
+                   RowBox[{
+                    RowBox[{
+                    "\"\<\\\"item\\\": {\>\"", "~~", "s__", "~~", 
+                    "\"\<}, \\\"definition\\\"\>\""}], "\[RuleDelayed]", 
+                    "s"}]}], "]"}], "]"}], "]"}]}], "\[IndentingNewLine]", 
+              "]"}]}]}], "\[IndentingNewLine]", "]"}], "/@", "raw2"}]}], ";", 
+        " ", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{
+         "combine", " ", "two", " ", "parts", " ", "of", " ", "data", " ", 
+          "into", " ", "a", " ", "single", " ", "lable"}], "*)"}], 
+        "\[IndentingNewLine]", 
+        RowBox[{"PageTable", "=", 
+         RowBox[{
+          RowBox[{"Function", "[", 
+           RowBox[{"row", ",", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"First", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"If", "[", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"Length", "[", "#", "]"}], ">", "0"}], ",", "#", 
+                   ",", 
+                   RowBox[{"{", 
+                    RowBox[{"Array", "[", 
+                    RowBox[{
+                    RowBox[{"\"\<\\\"\\\"\>\"", "&"}], ",", "6"}], "]"}], 
+                    "}"}]}], "]"}], "&"}], "@", 
+                RowBox[{"Select", "[", 
+                 RowBox[{"Tab2", ",", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{
+                    "#", "\[LeftDoubleBracket]", "1", 
+                    "\[RightDoubleBracket]"}], "\[Equal]", 
+                    RowBox[{
+                    "row", "\[LeftDoubleBracket]", "1", 
+                    "\[RightDoubleBracket]"}]}], "&"}]}], "]"}]}], "]"}], 
+              "\[LeftDoubleBracket]", 
+              RowBox[{"2", ";;"}], "\[RightDoubleBracket]"}], "~", "Join", 
+             "~", 
+             RowBox[{"row", "\[LeftDoubleBracket]", 
+              RowBox[{"2", ";;"}], "\[RightDoubleBracket]"}]}]}], "]"}], "/@",
+           "Tab1"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{"Download", " ", "Mem", " ", "Images"}], "*)"}], 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Function", "[", 
+          RowBox[{"row", ",", 
+           RowBox[{"Module", "[", 
+            RowBox[{
+             RowBox[{"{", "}"}], ",", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"If", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"TrueQ", "[", 
+                  RowBox[{
+                   RowBox[{
+                   "row", "\[LeftDoubleBracket]", "7", 
+                    "\[RightDoubleBracket]"}], "!=", "\"\<null\>\""}], " ", 
+                  "]"}], "&&", 
+                 RowBox[{"TrueQ", "[", 
+                  RowBox[{
+                   RowBox[{
+                   "row", "\[LeftDoubleBracket]", "7", 
+                    "\[RightDoubleBracket]"}], "!=", "\"\<\\\"\\\"\>\""}], 
+                  " ", " ", "]"}]}], ",", 
+                RowBox[{"URLDownload", "[", 
+                 RowBox[{
+                  RowBox[{"\"\<https://static.memrise.com/\>\"", "<>", 
+                   RowBox[{"StringTake", "[", 
+                    RowBox[{
+                    RowBox[{
+                    "row", "\[LeftDoubleBracket]", "7", 
+                    "\[RightDoubleBracket]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"15", ",", 
+                    RowBox[{"-", "2"}]}], "}"}]}], "]"}]}], ",", 
+                  RowBox[{
+                   RowBox[{"Directory", "[", "]"}], "<>", 
+                   "\"\<\\\\Original images\\\\\>\"", "<>", 
+                   RowBox[{"StringTake", "[", 
+                    RowBox[{
+                    RowBox[{
+                    "row", "\[LeftDoubleBracket]", "7", 
+                    "\[RightDoubleBracket]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"28", ",", 
+                    RowBox[{"-", "2"}]}], "}"}]}], "]"}]}]}], "]"}]}], "]"}], 
+              ";", "\[IndentingNewLine]", 
+              RowBox[{"If", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"TrueQ", "[", 
+                  RowBox[{
+                   RowBox[{
+                   "row", "\[LeftDoubleBracket]", "8", 
+                    "\[RightDoubleBracket]"}], "!=", "\"\<null\>\""}], " ", 
+                  "]"}], "&&", 
+                 RowBox[{"TrueQ", "[", 
+                  RowBox[{
+                   RowBox[{
+                   "row", "\[LeftDoubleBracket]", "8", 
+                    "\[RightDoubleBracket]"}], "!=", "\"\<\\\"\\\"\>\""}], 
+                  " ", " ", "]"}]}], ",", 
+                RowBox[{"URLDownload", "[", 
+                 RowBox[{
+                  RowBox[{"StringTake", "[", 
+                   RowBox[{
+                    RowBox[{
+                    "row", "\[LeftDoubleBracket]", "8", 
+                    "\[RightDoubleBracket]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"2", ",", 
+                    RowBox[{"-", "2"}]}], "}"}]}], "]"}], ",", 
+                  RowBox[{
+                   RowBox[{"Directory", "[", "]"}], "<>", 
+                   "\"\<\\\\Output images\\\\\>\"", "<>", 
+                   RowBox[{"StringTake", "[", 
+                    RowBox[{
+                    RowBox[{
+                    "row", "\[LeftDoubleBracket]", "8", 
+                    "\[RightDoubleBracket]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"49", ",", 
+                    RowBox[{"-", "2"}]}], "}"}]}], "]"}]}]}], "]"}]}], "]"}], 
+              ";"}]}], "\[IndentingNewLine]", "]"}]}], "]"}], "/@", 
+         "PageTable"}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{
+         "Add", " ", "data", " ", "from", " ", "page", " ", "to", " ", "the", 
+          " ", "full", " ", "list"}], "*)"}], "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Length", "[", "PageTable", "]"}], ">", "0"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"FullTable", "=", 
+           RowBox[{"FullTable", "~", "Join", "~", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"Append", "[", 
+               RowBox[{
+                RowBox[{"Append", "[", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"Map", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"JavaSpecialCharacters", "[", 
+                    RowBox[{"StringTake", "[", 
+                    RowBox[{"#", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"2", ",", 
+                    RowBox[{"-", "2"}]}], "}"}]}], "]"}], "]"}], "&"}], ",", 
+                    RowBox[{"PageTable", "\[LeftDoubleBracket]", 
+                    RowBox[{";;", ",", 
+                    RowBox[{";;", "6"}]}], "\[RightDoubleBracket]"}], ",", 
+                    RowBox[{"{", "2", "}"}]}], "]"}], "\[Transpose]"}], ",", 
+                  "\[IndentingNewLine]", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"StringLength", "[", "#", "]"}], ">", "30"}], ",", 
+                    RowBox[{"StringTake", "[", 
+                    RowBox[{"#", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"28", ",", 
+                    RowBox[{"-", "2"}]}], "}"}]}], "]"}], ",", "\"\<-\>\""}], 
+                    "]"}], "&"}], "/@", 
+                   RowBox[{"(", 
+                    RowBox[{"PageTable", "\[LeftDoubleBracket]", 
+                    RowBox[{";;", ",", "7"}], "\[RightDoubleBracket]"}], 
+                    ")"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"If", "[", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"StringLength", "[", "#", "]"}], ">", "50"}], ",", 
+                    RowBox[{"StringTake", "[", 
+                    RowBox[{"#", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"49", ",", 
+                    RowBox[{"-", "2"}]}], "}"}]}], "]"}], ",", "\"\<-\>\""}], 
+                   "]"}], "&"}], "/@", 
+                 RowBox[{"(", 
+                  RowBox[{"PageTable", "\[LeftDoubleBracket]", 
+                   RowBox[{";;", ",", "8"}], "\[RightDoubleBracket]"}], 
+                  ")"}]}]}], "\[IndentingNewLine]", "]"}], "\[Transpose]"}], 
+             ")"}]}]}]}], "]"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"FullTable", "//", "TableForm"}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{
+         "Check", " ", "if", " ", "there", " ", "is", " ", "a", " ", "next", 
+          " ", "page", " ", "to", " ", "download"}], "*)"}], 
+        "\[IndentingNewLine]", 
+        RowBox[{"next", "=", 
+         RowBox[{"TrueQ", "[", 
+          RowBox[{
+           RowBox[{"StringCount", "[", 
+            RowBox[{"html0", ",", "\"\<Next &raquo\>\""}], "]"}], ">", "0"}], 
+          "]"}]}], ";"}]}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      "]"}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Download", " ", "all", " ", "mems", " ", "from", " ", "a", " ", "user"}],
+     "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"UserDownload", "[", "user_", "]"}], ":=", 
+     RowBox[{"Module", "[", 
+      RowBox[{
+       RowBox[{"{", "finalname", "}"}], ",", "\[IndentingNewLine]", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Print", "[", 
+         RowBox[{"\"\<Downloading all mems from \>\"", "<>", "user"}], "]"}], 
+        ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"StringCount", "[", 
+            RowBox[{
+             RowBox[{"Import", "[", 
+              RowBox[{
+               RowBox[{
+               "\"\<https://app.memrise.com/user/\>\"", "<>", "user", "<>", 
+                "\"\</mems/created/\>\""}], ",", "\"\<text\>\""}], "]"}], 
+             ",", "\"\<No Mems :(\>\""}], "]"}], ">", "0"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Print", "[", "\"\<No Mems:(\>\"", "]"}], ",", 
+          "\[IndentingNewLine]", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"SetDirectory", "@", 
+            RowBox[{"NotebookDirectory", "[", "]"}]}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"CreateDirectory", "[", "user", "]"}], "//", "Quiet"}], 
+           ";", "\[IndentingNewLine]", 
+           RowBox[{"SetDirectory", "@", "user"}], ";", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"CreateDirectory", "[", "\"\<Output images\>\"", "]"}], "//",
+             "Quiet"}], ";", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"CreateDirectory", "[", "\"\<Original images\>\"", "]"}], 
+            "//", "Quiet"}], ";", "\n", "\[IndentingNewLine]", 
+           RowBox[{"FullTable", "=", 
+            RowBox[{"{", 
+             RowBox[{"{", 
+              RowBox[{
+              "\"\<Learnable id\>\"", ",", "\"\<Front label\>\"", ",", 
+               "\"\<Front value\>\"", ",", "\"\<Back label\>\"", ",", " ", 
+               "\"\<Back value\>\"", ",", "\"\<Text\>\"", ",", 
+               "\"\<Original image\>\"", ",", "\"\<Output image\>\""}], "}"}],
+              "}"}]}], ";", "\[IndentingNewLine]", 
+           RowBox[{"p", "=", "0"}], ";", 
+           RowBox[{"next", "=", "True"}], ";", "\[IndentingNewLine]", 
+           RowBox[{"While", "[", 
+            RowBox[{"next", ",", 
+             RowBox[{
+              RowBox[{"p", "++"}], ";", 
+              RowBox[{"PageUserDownload", "[", 
+               RowBox[{"user", ",", "p"}], "]"}]}]}], "]"}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"Print", "[", 
+            RowBox[{"\"\<Done. \>\"", "<>", 
+             RowBox[{"ToString", "[", "p", "]"}], "<>", 
+             "\"\< pages downloaded\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+           RowBox[{"TableForm", "[", "FullTable", "]"}], ";", 
+           "\[IndentingNewLine]", "\[IndentingNewLine]", 
+           RowBox[{"finalname", "=", 
+            RowBox[{"user", "<>", "\"\< (\>\"", "<>", 
+             RowBox[{"ToString", "[", 
+              RowBox[{
+               RowBox[{"Length", "[", "FullTable", "]"}], "-", "1"}], "]"}], 
+             "<>", "\"\<)\>\""}]}], ";", "\[IndentingNewLine]", 
+           RowBox[{"SetDirectory", "@", 
+            RowBox[{"NotebookDirectory", "[", "]"}]}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"RenameDirectory", "[", 
+            RowBox[{"user", ",", "finalname"}], "]"}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"SetDirectory", "@", "finalname"}], ";", 
+           "\[IndentingNewLine]", "\[IndentingNewLine]", 
+           RowBox[{"(*", 
+            RowBox[{
+            "Download", " ", "images", " ", "and", " ", "audio", " ", "from", 
+             " ", "cards"}], "*)"}], "\[IndentingNewLine]", 
+           RowBox[{
+           "uploadspath", "=", "\"\<https://static.memrise.com/uploads\>\""}],
+            ";", "\[IndentingNewLine]", 
+           RowBox[{"extralinksstring", "=", 
+            RowBox[{"Select", "[", 
+             RowBox[{
+              RowBox[{"Join", "[", 
+               RowBox[{
+                RowBox[{"FullTable", "\[LeftDoubleBracket]", 
+                 RowBox[{";;", ",", "3"}], "\[RightDoubleBracket]"}], ",", 
+                RowBox[{"FullTable", "\[LeftDoubleBracket]", 
+                 RowBox[{";;", ",", "5"}], "\[RightDoubleBracket]"}]}], "]"}],
+               ",", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"StringCount", "[", 
+                 RowBox[{"#", ",", "uploadspath"}], "]"}], ">", "0"}], 
+               "&"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+           RowBox[{"FullTableLinks", "=", "FullTable"}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Length", "[", "extralinksstring", "]"}], ">", "0"}], 
+             ",", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{
+              "Print", "[", "\"\<Downloading additional media\>\"", "]"}], 
+              ";", "\[IndentingNewLine]", 
+              RowBox[{
+              "CreateDirectory", "[", "\"\<additional media\>\"", "]"}], ";", 
+              "\[IndentingNewLine]", 
+              RowBox[{"extralinks", "=", 
+               RowBox[{"DeleteDuplicates", "@", 
+                RowBox[{"Flatten", "[", 
+                 RowBox[{"ExtractLinks", "/@", "extralinksstring"}], 
+                 "]"}]}]}], ";", "\[IndentingNewLine]", 
+              RowBox[{"Print", "[", 
+               RowBox[{
+                RowBox[{"ToString", "[", 
+                 RowBox[{"Length", "[", "extralinks", "]"}], "]"}], "<>", 
+                "\"\< files found\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+              "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"URLDownload", "[", 
+                 RowBox[{"#", ",", 
+                  RowBox[{
+                   RowBox[{"Directory", "[", "]"}], "<>", 
+                   "\"\<\\\\additional media\\\\\>\"", "<>", 
+                   RowBox[{"LinkFilename", "[", "#", "]"}]}]}], "]"}], "&"}], 
+               "/@", "extralinks"}], ";", "\[IndentingNewLine]", 
+              RowBox[{"Print", "[", "\"\<Done\>\"", "]"}], ";", 
+              "\[IndentingNewLine]", "\[IndentingNewLine]", 
+              RowBox[{"(*", 
+               RowBox[{
+               "replace", " ", "links", " ", "in", " ", "the", " ", "table", 
+                " ", "with", " ", "filenames"}], "*)"}], 
+              "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"FullTableLinks", "\[LeftDoubleBracket]", 
+                RowBox[{";;", ",", "3"}], "\[RightDoubleBracket]"}], "=", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"If", "[", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"StringCount", "[", 
+                    RowBox[{"#", ",", "uploadspath"}], "]"}], ">", "0"}], ",", 
+                   RowBox[{"StringTake", "[", 
+                    RowBox[{
+                    RowBox[{"StringJoin", "[", 
+                    RowBox[{
+                    RowBox[{"Function", "[", 
+                    RowBox[{"tmp", ",", 
+                    RowBox[{"StringJoin", "[", 
+                    RowBox[{"tmp", ",", "\"\<; \>\""}], "]"}]}], "]"}], "/@", 
+                    RowBox[{"LinkFilename", "/@", 
+                    RowBox[{"ExtractLinks", "[", "#", "]"}]}]}], "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", 
+                    RowBox[{"-", "3"}]}], "}"}]}], "]"}], ",", "#"}], "]"}], 
+                 "&"}], "/@", 
+                RowBox[{"(", 
+                 RowBox[{"FullTable", "\[LeftDoubleBracket]", 
+                  RowBox[{";;", ",", "3"}], "\[RightDoubleBracket]"}], 
+                 ")"}]}]}], ";", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"FullTableLinks", "\[LeftDoubleBracket]", 
+                RowBox[{";;", ",", "5"}], "\[RightDoubleBracket]"}], "=", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"If", "[", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"StringCount", "[", 
+                    RowBox[{"#", ",", "uploadspath"}], "]"}], ">", "0"}], ",", 
+                   RowBox[{"StringTake", "[", 
+                    RowBox[{
+                    RowBox[{"StringJoin", "[", 
+                    RowBox[{
+                    RowBox[{"Function", "[", 
+                    RowBox[{"tmp", ",", 
+                    RowBox[{"StringJoin", "[", 
+                    RowBox[{"tmp", ",", "\"\<; \>\""}], "]"}]}], "]"}], "/@", 
+                    RowBox[{"LinkFilename", "/@", 
+                    RowBox[{"ExtractLinks", "[", "#", "]"}]}]}], "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", 
+                    RowBox[{"-", "3"}]}], "}"}]}], "]"}], ",", "#"}], "]"}], 
+                 "&"}], "/@", 
+                RowBox[{"(", 
+                 RowBox[{"FullTable", "\[LeftDoubleBracket]", 
+                  RowBox[{";;", ",", "5"}], "\[RightDoubleBracket]"}], 
+                 ")"}]}]}], ";"}]}], "\[IndentingNewLine]", "]"}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"Export", "[", 
+            RowBox[{
+             RowBox[{"finalname", "<>", "\"\<.xlsx\>\""}], ",", 
+             "FullTableLinks"}], "]"}], ";", "\[IndentingNewLine]", 
+           RowBox[{"Export", "[", 
+            RowBox[{
+             RowBox[{"finalname", "<>", "\"\<.csv\>\""}], ",", 
+             "FullTableLinks"}], "]"}], ";", "\[IndentingNewLine]", 
+           "\[IndentingNewLine]", "\[IndentingNewLine]", 
+           "\[IndentingNewLine]", 
+           RowBox[{"SetDirectory", "@", 
+            RowBox[{"NotebookDirectory", "[", "]"}]}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Length", "[", 
+               RowBox[{"FileNames", "[", 
+                RowBox[{
+                "finalname", "<>", "\"\<\\\\Original images\\\\*\>\""}], 
+                "]"}], "]"}], "\[Equal]", "0"}], ",", 
+             RowBox[{"DeleteDirectory", "[", 
+              RowBox[{"finalname", "<>", "\"\<\\\\Original images\>\""}], 
+              "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Length", "[", 
+               RowBox[{"FileNames", "[", 
+                RowBox[{"finalname", "<>", "\"\<\\\\Output images\\\\*\>\""}],
+                 "]"}], "]"}], "\[Equal]", "0"}], ",", 
+             RowBox[{"DeleteDirectory", "[", 
+              RowBox[{"finalname", "<>", "\"\<\\\\Output images\>\""}], 
+              "]"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", 
+         RowBox[{"(*", 
+          RowBox[{
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Length", "[", 
+               RowBox[{"FileNames", "[", 
+                RowBox[{"finalname", "<>", "\"\<\\\\*\>\""}], "]"}], "]"}], 
+              "\[Equal]", "1"}], ",", 
+             RowBox[{
+              RowBox[{"CopyFile", "[", 
+               RowBox[{
+                RowBox[{
+                "finalname", "<>", "\"\<\\\\\>\"", "<>", "finalname", "<>", 
+                 "\"\<.xlsx\>\""}], ",", 
+                RowBox[{"finalname", "<>", "\"\<.xlsx\>\""}]}], "]"}], ";", 
+              RowBox[{"DeleteDirectory", "[", 
+               RowBox[{"finalname", ",", 
+                RowBox[{"DeleteContents", "\[Rule]", "True"}]}], "]"}]}]}], 
+            "]"}], ";"}], "*)"}], "\[IndentingNewLine]", 
+         "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}], ";"}]}], 
+      "\[IndentingNewLine]", "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.847341847504919*^9, 3.847341863775421*^9}, {
+   3.8473419044440594`*^9, 3.8473419194775085`*^9}, {3.8473419598132205`*^9, 
+   3.847341964662281*^9}, {3.847342790452196*^9, 3.8473428096906214`*^9}, {
+   3.8473476269834538`*^9, 3.8473476331005754`*^9}, {3.847347681364624*^9, 
+   3.847347686065407*^9}, {3.847348560914979*^9, 3.847348561230448*^9}, 
+   3.847349202791693*^9, 3.8473494305676904`*^9, {3.8473494631516066`*^9, 
+   3.8473494642163453`*^9}, {3.847349782752184*^9, 3.8473498014111133`*^9}, {
+   3.8473498456489964`*^9, 3.8473498719593506`*^9}, {3.8473523053439837`*^9, 
+   3.847352306060957*^9}, 3.8473528903833385`*^9, {3.847352931584159*^9, 
+   3.84735293166356*^9}, {3.8473541898895884`*^9, 3.847354189945235*^9}, {
+   3.8473542629665565`*^9, 3.8473542774920626`*^9}, {3.8473543365113115`*^9, 
+   3.847354336577281*^9}, {3.8473545569208407`*^9, 3.8473545569998283`*^9}, {
+   3.8473591466956897`*^9, 3.8473591468185887`*^9}, 3.8473591919236574`*^9, 
+   3.847359706058961*^9, {3.8473597650478015`*^9, 3.847359765167031*^9}, {
+   3.8473600750634623`*^9, 3.8473601122305737`*^9}, {3.847360267695125*^9, 
+   3.847360276883935*^9}, {3.84736047069267*^9, 3.8473604902413564`*^9}, 
+   3.847362385208746*^9, {3.8473671062800055`*^9, 3.847367107279375*^9}, {
+   3.8473671580876207`*^9, 3.847367179996426*^9}, 3.847367468921994*^9, {
+   3.8473676341302743`*^9, 3.847367634306181*^9}, {3.847367848291644*^9, 
+   3.8473678483635845`*^9}, {3.8473686300029697`*^9, 
+   3.8473686300749273`*^9}, {3.8473691515987005`*^9, 
+   3.8473691518930893`*^9}, {3.847372518851128*^9, 3.84737251909896*^9}, {
+   3.8473735487377863`*^9, 3.8473735488943973`*^9}, {3.8473737242187853`*^9, 
+   3.847373733032384*^9}, {3.847373790830583*^9, 3.8473737909590793`*^9}, {
+   3.8473752207138515`*^9, 3.847375226761654*^9}, 3.847375354154174*^9, 
+   3.84737563464391*^9, 3.847375809794262*^9, 3.8473759567055993`*^9, {
+   3.8473760612025576`*^9, 3.847376061472027*^9}, 3.8473809965855665`*^9, {
+   3.847383262345066*^9, 3.847383315719385*^9}, {3.8473834807561274`*^9, 
+   3.847383487838908*^9}, {3.847383937409976*^9, 3.847383948439994*^9}, 
+   3.847384106311842*^9, {3.847384162825781*^9, 3.847384197770162*^9}, 
+   3.847452040511812*^9, {3.8474591419632163`*^9, 3.8474591674045362`*^9}, {
+   3.8474597017253337`*^9, 3.847459720640704*^9}, 3.847460053668637*^9, {
+   3.8474601177386274`*^9, 3.8474601869979367`*^9}, {3.847460229603836*^9, 
+   3.8474602319565473`*^9}, {3.847460334378969*^9, 3.847460357917016*^9}, {
+   3.847460392574224*^9, 3.847460433025836*^9}, {3.8474604676578307`*^9, 
+   3.847460467954677*^9}, 3.847460534477273*^9, 3.8474605748457713`*^9, {
+   3.847460662864375*^9, 3.8474606994260035`*^9}, {3.847460733905779*^9, 
+   3.8474607461487303`*^9}, {3.847461176740959*^9, 3.8474611780448427`*^9}, 
+   3.8474613059951954`*^9, 3.8474614484935083`*^9, {3.8474720521841984`*^9, 
+   3.8474720542238655`*^9}, {3.847472100271535*^9, 3.847472198778798*^9}, {
+   3.847472235304169*^9, 3.847472318472174*^9}, {3.847472367277789*^9, 
+   3.8474723767494516`*^9}, {3.84747252992218*^9, 3.84747255613656*^9}, {
+   3.8474725866948557`*^9, 3.8474727104718747`*^9}, 3.847472841289162*^9, {
+   3.8474729464896955`*^9, 3.8474729471441445`*^9}, {3.8474733517033014`*^9, 
+   3.8474733906717763`*^9}, {3.847473515374716*^9, 3.8474735231584883`*^9}, {
+   3.847473621640092*^9, 3.847473622844673*^9}, {3.847473662490447*^9, 
+   3.847473662820602*^9}, {3.847473724882717*^9, 3.8474737422743998`*^9}, {
+   3.847473855028183*^9, 3.847473884199391*^9}, {3.847473963714136*^9, 
+   3.847473964623611*^9}, {3.8474740078137417`*^9, 3.8474741219254847`*^9}, {
+   3.8474741699679737`*^9, 3.8474741811542215`*^9}, {3.847474251096277*^9, 
+   3.847474274419037*^9}, {3.8474744079192524`*^9, 3.847474412168256*^9}, {
+   3.847474500834629*^9, 3.8474745273752675`*^9}, {3.8474769593873353`*^9, 
+   3.8474769672555933`*^9}, {3.847476998941077*^9, 3.847477006253951*^9}, {
+   3.8474770420495253`*^9, 3.8474770481230288`*^9}, 3.8474773596906276`*^9, 
+   3.847479086217368*^9, {3.8474791657316093`*^9, 3.847479171987629*^9}, 
+   3.847479745485278*^9, {3.8474805282425146`*^9, 3.8474805341562233`*^9}, {
+   3.8474806320220423`*^9, 3.8474806327837553`*^9}, {3.847480841433117*^9, 
+   3.8474808560582514`*^9}, {3.847480898510001*^9, 3.847480911691533*^9}, {
+   3.847481318068145*^9, 3.8474813181829*^9}, {3.8474814519908886`*^9, 
+   3.8474814677006826`*^9}, {3.847489884268653*^9, 3.84748990161301*^9}, 
+   3.847491223217371*^9, {3.847491305352621*^9, 3.847491315777985*^9}, {
+   3.8474915343742776`*^9, 3.8474915798721685`*^9}, {3.8474917986043653`*^9, 
+   3.847491800681165*^9}, {3.847491964384344*^9, 3.8474919663892503`*^9}, {
+   3.847492209867803*^9, 3.84749222488365*^9}, 3.847492315587895*^9, {
+   3.847492530816681*^9, 3.8474925322951326`*^9}, 3.8474925802854977`*^9, {
+   3.847492709832098*^9, 3.847492735948964*^9}, {3.847493192542686*^9, 
+   3.8474932145574555`*^9}, {3.8474934504713182`*^9, 3.8474934534033923`*^9}, 
+   3.8474935782345595`*^9, 3.8474940672106204`*^9, {3.8474952585592127`*^9, 
+   3.847495280412038*^9}, {3.847495767259669*^9, 3.8474958007802615`*^9}, {
+   3.847523307299892*^9, 3.8475233156022635`*^9}, 3.8477254369435935`*^9, {
+   3.847820026687114*^9, 3.8478200745996475`*^9}, {3.8478204478877707`*^9, 
+   3.847820460090893*^9}, {3.847821332362855*^9, 3.8478213324293256`*^9}, {
+   3.8478217463511662`*^9, 3.847821750741581*^9}, {3.848058015130374*^9, 
+   3.848058017923503*^9}, {3.848058253745274*^9, 3.848058254336443*^9}, {
+   3.848059139993334*^9, 3.8480591553686953`*^9}, {3.8480592186899557`*^9, 
+   3.8480592216216636`*^9}, {3.848061094889534*^9, 3.8480610967909393`*^9}, 
+   3.8480617463679857`*^9, {3.8480618921483045`*^9, 3.8480618965438156`*^9}, {
+   3.8480753443687315`*^9, 3.8480753680777793`*^9}, {3.8480756533712983`*^9, 
+   3.8480756543991146`*^9}, 3.848078615972642*^9, {3.848081064987919*^9, 
+   3.848081065256776*^9}, {3.84808188321996*^9, 3.848081909323326*^9}, {
+   3.8480819559907284`*^9, 3.848081984324812*^9}, {3.848082022839761*^9, 
+   3.8480820899714355`*^9}, {3.8480821476499586`*^9, 3.848082149513007*^9}, {
+   3.848082187967003*^9, 3.8480822317036667`*^9}, {3.848082352731233*^9, 
+   3.848082381754923*^9}, {3.8480824194689407`*^9, 3.848082525990309*^9}, {
+   3.848083171910818*^9, 3.8480831911365137`*^9}, 3.8480832925276594`*^9, {
+   3.848083423654846*^9, 3.848083424607851*^9}, {3.848084167936209*^9, 
+   3.84808417243845*^9}, {3.848084797052023*^9, 3.8480848011284823`*^9}, {
+   3.848084911654488*^9, 3.84808492111448*^9}, 3.8480855221059895`*^9, {
+   3.8480857142952623`*^9, 3.8480857157437787`*^9}, 3.8480861915948343`*^9, {
+   3.848443204119426*^9, 3.84844324344862*^9}, {3.848443278393526*^9, 
+   3.8484433245006504`*^9}, {3.848444384423489*^9, 3.8484443986484857`*^9}, {
+   3.848444438297043*^9, 3.8484444534194555`*^9}, 3.848444526821109*^9, {
+   3.8484446752022266`*^9, 3.848444733454769*^9}, {3.8484461140853157`*^9, 
+   3.8484461376792135`*^9}, {3.848446298741398*^9, 3.8484463187350826`*^9}, 
+   3.848446360496689*^9, 3.848446396047688*^9, {3.8484464381263447`*^9, 
+   3.8484464640890245`*^9}, {3.848447215058384*^9, 3.848447229161133*^9}, {
+   3.848447265859296*^9, 3.8484472659428124`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"12eda96d-d400-4e69-85f6-6109f997dfe5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Execute", " ", "downloading"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"UserDownload", "/@", "users"}], ";"}]}]], "Input",
+ CellChangeTimes->{{3.847472736496684*^9, 3.8474727454780064`*^9}, {
+   3.8474731913492613`*^9, 3.847473195268051*^9}, {3.847473750435232*^9, 
+   3.847473753177269*^9}, {3.847474144068948*^9, 3.8474741551572013`*^9}, 
+   3.8477343712609034`*^9},
+ CellLabel->"In[27]:=",ExpressionUUID->"9e83d05a-5366-47f7-91d9-eaa99adbf00d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"Downloading all mems from amoussa\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwg7ZSyZcf5LW8cATLjqaM=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"6a1b686c-2d27-4afc-a9a0-67e090eef723"],
+
+Cell[BoxData["\<\"Downloading page 1\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwg/Yb74Y7zW944AgA20qoh
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"f2ae5838-cf0a-45ae-af02-68c279d558c3"],
+
+Cell[BoxData["\<\"Downloading page 2\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgnZsuu/P8ljeOADDLqTs=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"1d96ce59-c27b-49dd-98d0-f0b96caea27d"],
+
+Cell[BoxData["\<\"Downloading page 3\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwg/W2Sy87zW944AgA3KqoW
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"53aff85d-a324-47cb-9700-73687824d18c"],
+
+Cell[BoxData["\<\"Downloading page 4\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgbfI0fuf5LW8cATQBqcI=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"287336e6-432e-409e-a8e1-10b65b75aafa"],
+
+Cell[BoxData["\<\"Downloading page 5\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwg/Sq2euf5LW8cATahqgw=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"538af17c-9f69-4b93-95e0-c03b8e0109a7"],
+
+Cell[BoxData["\<\"Downloading page 6\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwg/Y119s7zW944AgA1Wang
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"95e6dc97-e5d1-4b03-9f2b-3d76d3db67f2"],
+
+Cell[BoxData["\<\"Downloading page 7\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwg/U5ux87zW944AgA2dqoO
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"07cdd861-fd07-469f-a456-0232358af965"],
+
+Cell[BoxData["\<\"Downloading page 8\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgvWnz6Z3nt7xxBAA5G6p6
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"bed8e117-f685-4990-aa35-be928c5a2407"],
+
+Cell[BoxData["\<\"Downloading page 9\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgffLFjZ3nt7xxBAA7lKrT
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"eaa62dc9-da41-447e-b77b-5cb4e8975cba"],
+
+Cell[BoxData["\<\"Downloading page 10\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgvTjoxc7zW944AgA2qqon
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"6a96e4aa-7bd4-4753-9d3a-b9805b9946c9"],
+
+Cell[BoxData["\<\"Downloading page 11\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgLfP7187zW944AgA3fapb
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"136f6da6-9198-4a21-86b9-14a12f2701f2"],
+
+Cell[BoxData["\<\"Downloading page 12\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwg3Vwkuev8ljeOADG1qVk=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"3ecfa837-fdb2-476a-af28-8c1ca0afe18e"],
+
+Cell[BoxData["\<\"Downloading page 13\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgnTTPctf5LW8cATKhqYQ=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"24620e30-b8e8-4872-ae47-8e16f17d00a6"],
+
+Cell[BoxData["\<\"Downloading page 14\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgveZm5K7zW944AgA3Tqop
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"f6e132db-4611-440f-86df-c542516ceb36"],
+
+Cell[BoxData["\<\"Downloading page 15\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgfeJVxa7zW944AgA5X6p1
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"1ff277dd-9e89-4490-bf0f-24a85cc4c975"],
+
+Cell[BoxData["\<\"Downloading page 16\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwg/UmrY9f5LW8cATXPqe8=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"caf66f2a-16f2-4afa-8725-3b36ceeea2a5"],
+
+Cell[BoxData["\<\"Downloading page 17\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgPSNm2a7zW944AgA1Eanl
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"9b376a7d-bc00-4a78-91eb-77b27d92828b"],
+
+Cell[BoxData["\<\"Downloading page 18\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgvWzdll3nt7xxBAA4E6pT
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"866e580f-f180-4811-a109-9c6313b3beea"],
+
+Cell[BoxData["\<\"Downloading page 19\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgvWP+oV3nt7xxBAA4jqpk
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"7f787b0a-2fc7-418f-a618-507fa16d749c"],
+
+Cell[BoxData["\<\"Downloading page 20\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgfX7n5V3nt7xxBAA6Yqqm
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"64d76087-df9d-44b8-b137-986d8b61c16d"],
+
+Cell[BoxData["\<\"Downloading page 21\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgnaX2Zdf5LW8cATP7qc8=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"2d3ce293-9a85-43cb-921f-d67ec059ca7a"],
+
+Cell[BoxData["\<\"Downloading page 22\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgPaOEZff5LW8cATHyqVw=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"6daa5be1-b9a2-4a75-9a70-d8ab8f004556"],
+
+Cell[BoxData["\<\"Downloading page 23\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgfUhKZPf5LW8cATEsqTw=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"647140eb-29ea-42c4-a6e2-b4903615eca4"],
+
+Cell[BoxData["\<\"Downloading page 24\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgvSdWc/f5LW8cATNPqY4=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"9f6d8572-db1a-4a1d-a507-efc039596c3d"],
+
+Cell[BoxData["\<\"Downloading page 25\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwg/TrLYvf5LW8cATV8qdk=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"e2a7f275-c5fc-43fd-a035-031f4ccb6e20"],
+
+Cell[BoxData["\<\"Downloading page 26\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgbbi2fPf5LW8cATL7qaE=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"effcceaa-8a3b-48e8-aed1-ee6624e3de8f"],
+
+Cell[BoxData["\<\"Downloading page 27\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgvU+na/f5LW8cATROqcA=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"95d5e610-c0f5-41ba-a7fe-fecde4b23f1a"],
+
+Cell[BoxData["\<\"Downloading page 28\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgfY1z5u7zW944AgA0c6nE
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"edd17462-1422-4ad2-ac46-bd1cfba423f7"],
+
+Cell[BoxData["\<\"Downloading page 29\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgXbdfdc/5LW8cATP6qa8=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"de4a3733-17f1-45d6-8808-f3ef35560cf0"],
+
+Cell[BoxData["\<\"Downloading page 30\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgraj+Ze/5LW8cATHJqYo=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"a75f9992-1e2f-46e1-ac67-6bbd865ef3f6"],
+
+Cell[BoxData["\<\"Downloading page 31\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgbZ1RdOD8ljeOADFjqWY=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"8cbecf27-a7e6-4655-88f8-edceaf7b15bc"],
+
+Cell[BoxData["\<\"Downloading page 32\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwg3WFmceT8ljeOADElqUs=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"64cc8ebd-4c51-413e-9f96-b8454e31e4b4"],
+
+Cell[BoxData["\<\"Downloading page 33\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgXWp+8Nj5LW8cATPUqcQ=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"377dd997-8da7-458d-aca6-fc0307aa8187"],
+
+Cell[BoxData["\<\"Downloading page 34\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgzcKievL8ljeOACtOqIc=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"1327b55d-c5b6-4b62-a5dc-810924bdef3e"],
+
+Cell[BoxData["\<\"Done. 34 pages downloaded\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgfafT6vT5LW8cATY5qfs=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"d6a3b71c-8203-445c-b2a1-db82cc515cd1"],
+
+Cell[BoxData["\<\"Downloading additional media\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwg/ei31enzW944AgA5h6pz
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"6e962797-7f3c-481e-b535-c487a01e91ad"],
+
+Cell[BoxData["\<\"8 files found\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgna9qffr8ljeOADAbqSs=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"b824a3e4-188f-463d-9168-1adc6a96d0be"],
+
+Cell[BoxData["\<\"Done\"\>"], "Print",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmVkYGBQB+J9EsfVale9cfzgesu9BUj7NO399RlIzxJ7V/UDSNto
+L1D9DaRjZJ8WKKx+4/hm50Q3ZSDt2jQ9WhVIz9/67epUIO27SdBqOpBmcdHX
+nQGkaw7/zgXRb67NrAPR3MZ5JvOBtEbniZkgmjNWZsYCIL3x09z/i4C0eCMP
+yxIgLVT+UQZEs5RNiAfRX9oSeZYC6cNXjmitBtLPZIXP7AXSFj86UxjWANU/
+tDwcBKQTH4kvDAHSocwdS0E0g/KP5yD61YuXMYJr3zhG1U2vNgfSjV6flBrW
+AfVXT/SeDKRjLazXrgHSAn/2iP8D0hKzGJ/brH/jmBJ8/1DFhjeOIY9Vbrhs
+euPYvs1gzgwgHcOpcOb8ljeOAC4iqOI=
+  "],
+ CellLabel->
+  "During evaluation of \
+In[27]:=",ExpressionUUID->"1dd235f9-263c-426f-aeb0-98c517a3b3bf"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{958, 988},
+WindowMargins->{{Automatic, 235}, {Automatic, 90}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 7651, 134, 656, "Input",ExpressionUUID->"7a92bbae-a347-454f-a82c-548bb7d63afa"],
+Cell[8212, 156, 54697, 1210, 4038, "Input",ExpressionUUID->"12eda96d-d400-4e69-85f6-6109f997dfe5"],
+Cell[CellGroupData[{
+Cell[62934, 1370, 515, 10, 48, "Input",ExpressionUUID->"9e83d05a-5366-47f7-91d9-eaa99adbf00d"],
+Cell[CellGroupData[{
+Cell[63474, 1384, 614, 12, 22, "Print",ExpressionUUID->"6a1b686c-2d27-4afc-a9a0-67e090eef723"],
+Cell[64091, 1398, 599, 12, 22, "Print",ExpressionUUID->"f2ae5838-cf0a-45ae-af02-68c279d558c3"],
+Cell[64693, 1412, 599, 12, 22, "Print",ExpressionUUID->"1d96ce59-c27b-49dd-98d0-f0b96caea27d"],
+Cell[65295, 1426, 599, 12, 22, "Print",ExpressionUUID->"53aff85d-a324-47cb-9700-73687824d18c"],
+Cell[65897, 1440, 599, 12, 22, "Print",ExpressionUUID->"287336e6-432e-409e-a8e1-10b65b75aafa"],
+Cell[66499, 1454, 599, 12, 22, "Print",ExpressionUUID->"538af17c-9f69-4b93-95e0-c03b8e0109a7"],
+Cell[67101, 1468, 599, 12, 22, "Print",ExpressionUUID->"95e6dc97-e5d1-4b03-9f2b-3d76d3db67f2"],
+Cell[67703, 1482, 599, 12, 22, "Print",ExpressionUUID->"07cdd861-fd07-469f-a456-0232358af965"],
+Cell[68305, 1496, 599, 12, 22, "Print",ExpressionUUID->"bed8e117-f685-4990-aa35-be928c5a2407"],
+Cell[68907, 1510, 599, 12, 22, "Print",ExpressionUUID->"eaa62dc9-da41-447e-b77b-5cb4e8975cba"],
+Cell[69509, 1524, 600, 12, 22, "Print",ExpressionUUID->"6a96e4aa-7bd4-4753-9d3a-b9805b9946c9"],
+Cell[70112, 1538, 600, 12, 22, "Print",ExpressionUUID->"136f6da6-9198-4a21-86b9-14a12f2701f2"],
+Cell[70715, 1552, 600, 12, 22, "Print",ExpressionUUID->"3ecfa837-fdb2-476a-af28-8c1ca0afe18e"],
+Cell[71318, 1566, 600, 12, 22, "Print",ExpressionUUID->"24620e30-b8e8-4872-ae47-8e16f17d00a6"],
+Cell[71921, 1580, 600, 12, 22, "Print",ExpressionUUID->"f6e132db-4611-440f-86df-c542516ceb36"],
+Cell[72524, 1594, 600, 12, 22, "Print",ExpressionUUID->"1ff277dd-9e89-4490-bf0f-24a85cc4c975"],
+Cell[73127, 1608, 600, 12, 22, "Print",ExpressionUUID->"caf66f2a-16f2-4afa-8725-3b36ceeea2a5"],
+Cell[73730, 1622, 600, 12, 22, "Print",ExpressionUUID->"9b376a7d-bc00-4a78-91eb-77b27d92828b"],
+Cell[74333, 1636, 600, 12, 22, "Print",ExpressionUUID->"866e580f-f180-4811-a109-9c6313b3beea"],
+Cell[74936, 1650, 600, 12, 22, "Print",ExpressionUUID->"7f787b0a-2fc7-418f-a618-507fa16d749c"],
+Cell[75539, 1664, 600, 12, 22, "Print",ExpressionUUID->"64d76087-df9d-44b8-b137-986d8b61c16d"],
+Cell[76142, 1678, 600, 12, 22, "Print",ExpressionUUID->"2d3ce293-9a85-43cb-921f-d67ec059ca7a"],
+Cell[76745, 1692, 600, 12, 22, "Print",ExpressionUUID->"6daa5be1-b9a2-4a75-9a70-d8ab8f004556"],
+Cell[77348, 1706, 600, 12, 22, "Print",ExpressionUUID->"647140eb-29ea-42c4-a6e2-b4903615eca4"],
+Cell[77951, 1720, 600, 12, 22, "Print",ExpressionUUID->"9f6d8572-db1a-4a1d-a507-efc039596c3d"],
+Cell[78554, 1734, 600, 12, 22, "Print",ExpressionUUID->"e2a7f275-c5fc-43fd-a035-031f4ccb6e20"],
+Cell[79157, 1748, 600, 12, 22, "Print",ExpressionUUID->"effcceaa-8a3b-48e8-aed1-ee6624e3de8f"],
+Cell[79760, 1762, 600, 12, 22, "Print",ExpressionUUID->"95d5e610-c0f5-41ba-a7fe-fecde4b23f1a"],
+Cell[80363, 1776, 600, 12, 22, "Print",ExpressionUUID->"edd17462-1422-4ad2-ac46-bd1cfba423f7"],
+Cell[80966, 1790, 600, 12, 22, "Print",ExpressionUUID->"de4a3733-17f1-45d6-8808-f3ef35560cf0"],
+Cell[81569, 1804, 600, 12, 22, "Print",ExpressionUUID->"a75f9992-1e2f-46e1-ac67-6bbd865ef3f6"],
+Cell[82172, 1818, 600, 12, 22, "Print",ExpressionUUID->"8cbecf27-a7e6-4655-88f8-edceaf7b15bc"],
+Cell[82775, 1832, 600, 12, 22, "Print",ExpressionUUID->"64cc8ebd-4c51-413e-9f96-b8454e31e4b4"],
+Cell[83378, 1846, 600, 12, 22, "Print",ExpressionUUID->"377dd997-8da7-458d-aca6-fc0307aa8187"],
+Cell[83981, 1860, 600, 12, 22, "Print",ExpressionUUID->"1327b55d-c5b6-4b62-a5dc-810924bdef3e"],
+Cell[84584, 1874, 606, 12, 22, "Print",ExpressionUUID->"d6a3b71c-8203-445c-b2a1-db82cc515cd1"],
+Cell[85193, 1888, 609, 12, 22, "Print",ExpressionUUID->"6e962797-7f3c-481e-b535-c487a01e91ad"],
+Cell[85805, 1902, 594, 12, 22, "Print",ExpressionUUID->"b824a3e4-188f-463d-9168-1adc6a96d0be"],
+Cell[86402, 1916, 585, 12, 22, "Print",ExpressionUUID->"1dd235f9-263c-426f-aeb0-98c517a3b3bf"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
