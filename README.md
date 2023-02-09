@@ -1,4 +1,4 @@
-A restored verion of [Remembering the Kanji course](https://community.memrise.com/t/mems-from-rtk-course-revived/81550) as an Anki deck.
+A restored version of [Remembering the Kanji course](https://community.memrise.com/t/mems-from-rtk-course-revived/81550) as an Anki deck.
 
 A preview of a chrome extension for the MemRise site
 ![gif](https://user-images.githubusercontent.com/93875472/217728708-cdd3ebf6-a377-4561-a0a5-a1bc022b5381.gif)
